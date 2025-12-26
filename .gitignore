@@ -36,3 +36,4 @@ out/
 # Dagger generated
 **/generated/
 
+/app/.cxx/

@@ -18,18 +18,18 @@
         android:hardwareAccelerated="true"
         android:largeHeap="true">
 
-        <!-- Tell Quest this is a 2D panel app, NOT an immersive VR app -->
+        <!-- Quest device support - 2D Panel App -->
         <meta-data android:name="com.oculus.supportedDevices" android:value="quest|quest2|quest3|questpro" />
 
         <activity
             android:name=".MainActivity"
-            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|navigation"
+            android:configChanges="density|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|uiMode"
             android:exported="true"
             android:launchMode="singleTask"
             android:screenOrientation="landscape"
             android:theme="@style/Theme.QuestHelloWorld.Fullscreen">
 
-            <!-- Standard launcher intent only - no VR category -->
+            <!-- Standard launcher - NO VR category = runs as 2D panel -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

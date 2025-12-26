@@ -5,6 +5,7 @@ plugins {
 android {
     namespace = "com.quest.helloworld"
     compileSdk = 34
+    ndkVersion = "25.2.9519653"
 
     defaultConfig {
         applicationId = "com.quest.helloworld"
@@ -15,6 +16,22 @@ android {
 
         ndk {
             abiFilters += listOf("arm64-v8a")  // Quest 3 uses ARM64
+        }
+        
+        // Enable native build with CMake
+        externalNativeBuild {
+            cmake {
+                cppFlags += "-std=c++17"
+                arguments += "-DANDROID_STL=c++_shared"
+            }
+        }
+    }
+    
+    // Configure CMake build
+    externalNativeBuild {
+        cmake {
+            path = file("src/main/cpp/CMakeLists.txt")
+            version = "3.22.1"
         }
     }
 
