@@ -1,0 +1,9 @@
+// Top-level build file for Quest Hello World project
+plugins {
+    id("com.android.application") version "8.5.0" apply false
+}
+
+tasks.register("clean", Delete::class) {
+    delete(rootProject.layout.buildDirectory)
+}
+

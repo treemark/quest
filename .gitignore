@@ -1,0 +1,38 @@
+# Gradle
+.gradle/
+build/
+**/build/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+
+# Android
+local.properties
+*.apk
+*.ap_
+*.aab
+
+# Java
+*.class
+*.log
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# macOS
+.DS_Store
+*.swp
+*~
+
+# Generated files
+gen/
+out/
+
+# Dagger generated
+**/generated/
+

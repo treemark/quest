@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme -->
+    <style name="Theme.QuestHelloWorld" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/vr_background</item>
+        <item name="android:colorPrimary">@color/accent_cyan</item>
+        <item name="android:colorAccent">@color/accent_orange</item>
+    </style>
+
+    <!-- Fullscreen theme for VR activity -->
+    <style name="Theme.QuestHelloWorld.Fullscreen">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+</resources>
+

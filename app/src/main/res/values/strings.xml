@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quest Hello World</string>
+    <string name="exit_title">Exit VR</string>
+    <string name="exit_message">Are you sure you want to exit?</string>
+</resources>
+
